@@ -43,3 +43,57 @@ A real-time, AI-powered system to combat financial fraud. The model analyzes tra
 
 Install dependencies:
 
+pip install -r requirements.txt
+
+text
+
+## Usage
+
+Predict on new data:
+python3 scripts/predict_fraud.py --input data/new_data.csv --output data/predictions.csv
+
+text
+
+Evaluate on test data:
+python3 scripts/evaluate_model.py
+
+text
+
+---
+
+## Data
+
+- `data/test_data.csv`: Sample labeled test data
+- `data/new_data.csv`: New transactions for prediction
+- **`creditcard.csv`**: The full dataset is not included due to GitHub file size limits.
+
+### How to Add `creditcard.csv`
+
+1. Download it from [Kaggle Credit Card Fraud Detection](https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud)
+2. Place `creditcard.csv` in the root directory of this project (`Transaction_Sentinel/creditcard.csv`)
+
+> For testing, sample CSVs are already provided in the `/data` folder.
+
+---
+
+## Model
+
+- `models/xgb_fraud_model.pkl`: Trained XGBoost model
+
+## Scripts
+
+- `scripts/predict_fraud.py`: Prediction script
+- `scripts/evaluate_model.py`: Evaluation script
+- `scripts/feature_importance.py`: Visualizes feature importances (optional)
+
+## Notebooks
+
+- `notebooks/Transaction_Sentinel_Prediction.ipynb`: Jupyter notebook for step-by-step demonstration (optional)
+
+---
+
+## License
+
+Distributed for educational and research purposes.
+
+---
