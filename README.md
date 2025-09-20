@@ -1,7 +1,5 @@
 # Transaction Sentinel – Fraud Detection System
 
-## CYBERSECURITY CHALLENGE – FULL DETAILS (INTERMEDIATE LEVEL)
-
 ### Description
 
 A real-time, AI-powered system to combat financial fraud. The model analyzes transaction patterns, user behavior (time of day, location, purchase amount), and device data to instantly flag suspicious activity. The solution is trained on a dataset of transactions to learn what constitutes normal behavior for a user and can detect anomalies with high accuracy, minimizing false positives and protecting both customers and businesses from financial loss.
@@ -45,21 +43,20 @@ Install dependencies:
 
 pip install -r requirements.txt
 
-text
-
 ## Usage
 
 Predict on new data:
-python3 scripts/predict_fraud.py --input data/new_data.csv --output data/predictions.csv
-
-text
-
-Evaluate on test data:
-python3 scripts/evaluate_model.py
-
-text
 
 ---
+
+python3 scripts/predict_fraud.py --input data/new_data.csv --output data/predictions.csv
+
+Evaluate on test data:
+
+---
+
+python3 scripts/evaluate_model.py
+
 
 ## Data
 
@@ -90,10 +87,6 @@ text
 
 - `notebooks/Transaction_Sentinel_Prediction.ipynb`: Jupyter notebook for step-by-step demonstration (optional)
 
----
-
 ## License
 
 Distributed for educational and research purposes.
-
----
